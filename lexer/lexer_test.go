@@ -22,6 +22,7 @@ func TestNextToken(t *testing.T) {
 		{token.SEMICOLON, ";"},
 		{token.EOF, ""},
 	}
+
 	l := New(input)
 	for i, tt := range tests {
 		tok := l.NextToken()
